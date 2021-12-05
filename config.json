@@ -1,0 +1,9 @@
+{
+"URL_SERVER":"http://51.81.82.198:30120",
+"SERVER_NAME":"Snipe's Test Server",
+"SERVER_LOGO_URL": "https://cdn.discordapp.com/attachments/915856477812584508/917037101206372372/642986455253123082.gif",
+"BOT_TOKEN":"OTA4Mzg5NjExMjIxNDIyMTEx.YY1BwA.ZLXszHj6rJffPJjY8a29YZuaclg",
+"CHANNEL_ID":"915856477812584508",
+"connectURL": "test.snipefivem.com",
+"MAX_PLAYERS":"64"
+}

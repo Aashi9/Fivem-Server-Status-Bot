@@ -1,0 +1,20 @@
+{
+  "name": "Improved Server-Status-bot for FiveM Servers",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node ./bot.js",
+    "update": "git pull && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aashi9",
+  "license": "GPL-3.0",
+  "dependencies": {
+     "discord.js": "^13.3.1",
+    "fetch-timeout": "^0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aashi9/Fivem-Server-Status-Bot"
+  }
+}
