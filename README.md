@@ -23,5 +23,5 @@ MAX_PLAYERS : Max slot your server has : (e.g. 48 , 64 , 128 )
 ```
 ## Running
 1. `npm i`
-2. `npm start` or `node ./bot.js`
+2. `npm start` or `node bot.js`
 
