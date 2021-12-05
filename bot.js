@@ -97,7 +97,7 @@ const sendOrUpdate = function(embed) {
     .setTimestamp(new Date())
     if (STATUS !== undefined)
     {
-      embed.addField('<a:9549_check_no:736099324731064452> ERROR WARNING !',`${STATUS}\n\u200b\n`);
+      embed.addField('❌ ERROR WARNING !',`${STATUS}\n\u200b\n`);
       embed.setColor(0x03be31)
     }
     return embed;
@@ -108,7 +108,7 @@ const sendOrUpdate = function(embed) {
     if (LAST_COUNT !== null) console.log(`Server is offline ${url} (${playerfile} ${infofile})`);
     let embed = UpdateEmbed()
     .setColor(0xff0000)
-    .addField('Server Status',':x: Offline',true)
+    .addField('Server Status',' ❌ Offline',true)
     .addField('Queue','?',true)
     .addField('Online Players','?\n\u200b\n',true);
     sendOrUpdate({embeds: [embed] });
