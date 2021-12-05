@@ -9,37 +9,32 @@ const bot = new Client({
 const config = require('./config.json');
 const Discord = require('discord.js');
 const fetchTimeout = require('fetch-timeout');
-
-  const url = config.URL_SERVER;
-  const playerfile = new URL('/players.json',config.URL_SERVER).toString();
-  const infofile = new URL('/info.json',config.URL_SERVER).toString();
-  const TICK_MAX = 1 << 9;
-  const FETCH_TIMEOUT = 900;
-  const CHANNEL_ID = config.CHANNEL_ID;
-  const UPDATE_TIME = 2500; 
-
-  const FETCH_OPS = {
+const url = config.URL_SERVER;
+const playerfile = new URL('/players.json',config.URL_SERVER).toString();
+const infofile = new URL('/info.json',config.URL_SERVER).toString();
+const TICK_MAX = 1 << 9;
+const FETCH_TIMEOUT = 900;
+const CHANNEL_ID = config.CHANNEL_ID;
+const UPDATE_TIME = 2500; 
+const FETCH_OPS = 
+  {
     'cache': 'no-cache',
     'method': 'GET',
   };
 
-
-  
-  var TICK_N = 0;
-  var MESSAGE;
-  var LAST_COUNT;
-  var STATUS;
-
-
-  var loop_callbacks = []; 
+var TICK_N = 0;
+var MESSAGE;
+var LAST_COUNT;
+var STATUS;
+var loop_callbacks = []; 
   bot.on('ready',()  => 
   {
     console.log(`Bot ${bot.user.tag} is logged in!`);
-  })
+  });
 
-
-  const getPlayers = function() {
-    return new Promise((resolve,reject) => {
+const getPlayers = function() 
+{
+  return new Promise((resolve,reject) => {
       fetchTimeout(playerfile,FETCH_OPS,FETCH_TIMEOUT).then((res) => {
         res.json().then((players) => {
           resolve(players);
@@ -48,8 +43,9 @@ const fetchTimeout = require('fetch-timeout');
     })
   };
 
-  const getVars = function() {
-    return new Promise((resolve,reject) => {
+const getVars = function() 
+{
+  return new Promise((resolve,reject) => {
       fetchTimeout(infofile,FETCH_OPS,FETCH_TIMEOUT).then((res) => {
         res.json().then((info) => {
           resolve(info.vars);
