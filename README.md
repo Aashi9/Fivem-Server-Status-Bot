@@ -21,6 +21,9 @@ CHANNEL_ID : Discord Channel ID where you wish to see the status
 connectURL : If you have a dedicated connect URL (e.g. connect play.botliferp.com or any cf url)
 MAX_PLAYERS : Max slot your server has : (e.g. 48 , 64 , 128 )
 ```
+
+![image](https://user-images.githubusercontent.com/46029004/144753690-fbf43de6-2294-49df-9b75-9855580c0366.png)
+
 ## Running
 1. `npm i`
 2. `npm start` or `node bot.js`
