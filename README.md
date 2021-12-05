@@ -7,6 +7,11 @@ Its free to use
 Dont storm your brain into fingering with scripts
 Editing config should solve your issue and get the Bot ONLINE !
 
+> DISCORDJS v13
+> HAS QUEUE COUNT
+> SIMPLE AND EASY TO USER CONFIG FILE
+> ENJOY !
+
 URL_SERVER  : Your server IP and port number goes here (e.g https://51.63.128.189:30120)
 SERVER_NAME :  Server Name that you would like to have on the status (e.g. Bot Life Roleplay
 SERVER_LOGO_URL : Link for your status profile image ( Can be a imgur or maybe upload on discord and paste the link)
